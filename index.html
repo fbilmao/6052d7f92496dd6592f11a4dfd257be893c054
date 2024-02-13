@@ -23,6 +23,7 @@
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
 
             const gamesArray = [];
+            const appIDsMap = new Map();
 
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
@@ -43,19 +44,21 @@
 
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    if (!gamesArray.some(gameObj => gameObj.appID === appID)) {
-                        const name = game.querySelector('name').textContent;
-                        const logo = game.querySelector('logo').textContent;
-                        const storeLink = game.querySelector('storeLink').textContent;
+                    const name = game.querySelector('name').textContent;
+                    const logo = game.querySelector('logo').textContent;
+                    const storeLink = game.querySelector('storeLink').textContent;
 
+                    if (!appIDsMap.has(appID)) {
                         const gameObj = {
                             appID,
                             name,
                             logo,
-                            storeLink
+                            storeLink,
+                            filename
                         };
 
                         gamesArray.push(gameObj);
+                        appIDsMap.set(appID, filename);
                     }
                 });
 
@@ -65,6 +68,9 @@
                 // Render games list
                 renderGamesList(gamesArray);
             }
+
+            // Render filenames with duplicate appIDs at the bottom
+            renderFilenames(appIDsMap);
         }
 
         function renderGamesList(gamesArray) {
@@ -82,6 +88,17 @@
                     </div>
                 `;
                 gamesList.appendChild(listItem);
+            });
+        }
+
+        function renderFilenames(appIDsMap) {
+            const xmlContent = document.getElementById('xml-content');
+            xmlContent.innerHTML = ''; // Clear previous content
+
+            appIDsMap.forEach((filename, appID) => {
+                const duplicateFileName = document.createElement('p');
+                duplicateFileName.textContent = `Duplicate AppID ${appID} found in file: ${filename}`;
+                xmlContent.appendChild(duplicateFileName);
             });
         }
 
