@@ -22,7 +22,7 @@
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
 
-            const appIDs = new Set();
+            const gamesArray = [];
 
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
@@ -43,25 +43,46 @@
 
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    if (!appIDs.has(appID)) {
+                    if (!gamesArray.some(gameObj => gameObj.appID === appID)) {
                         const name = game.querySelector('name').textContent;
                         const logo = game.querySelector('logo').textContent;
                         const storeLink = game.querySelector('storeLink').textContent;
 
-                        const listItem = document.createElement('li');
-                        listItem.innerHTML = `
-                            <img src="${logo}" alt="${name} logo">
-                            <div>
-                                <h2>${name}</h2>
-                                <p>App ID: ${appID}</p>
-                                <a href="${storeLink}" target="_blank">Store Link</a>
-                            </div>
-                        `;
-                        document.getElementById('games-list').appendChild(listItem);
-                        appIDs.add(appID);
+                        const gameObj = {
+                            appID,
+                            name,
+                            logo,
+                            storeLink
+                        };
+
+                        gamesArray.push(gameObj);
                     }
                 });
+
+                // Sort games by appID
+                gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
+
+                // Render games list
+                renderGamesList(gamesArray);
             }
+        }
+
+        function renderGamesList(gamesArray) {
+            const gamesList = document.getElementById('games-list');
+            gamesList.innerHTML = ''; // Clear previous list
+
+            gamesArray.forEach(game => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <img src="${game.logo}" alt="${game.name} logo">
+                    <div>
+                        <h2>${game.name}</h2>
+                        <p>App ID: ${game.appID}</p>
+                        <a href="${game.storeLink}" target="_blank">Store Link</a>
+                    </div>
+                `;
+                gamesList.appendChild(listItem);
+            });
         }
 
         loadGames().catch(error => {
