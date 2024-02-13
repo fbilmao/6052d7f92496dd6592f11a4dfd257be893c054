@@ -3,51 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XML Games List</title>
+    <title>DB v1.0.0</title>
 </head>
 <body>
-    <h1>Games List</h1>
+    <h1>Games List (Loading...)</h1>
     <ul id="games-list">
         <!-- List of games will be populated here -->
     </ul>
-
     <div id="xml-content">
         <!-- XML content of files without appID will be printed here -->
     </div>
-
     <script>
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
-
             const gamesArray = [];
             const appIDsMap = new Map();
-
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
-                
-                // Check if the XML contains appID
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
-                    // Print XML content at the bottom of the page
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
-                    continue; // Skip to the next XML file
+                    continue;
                 }
-
                 const games = xml.querySelectorAll('gamesList > games');
-
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
                     const name = game.querySelector('name').textContent;
                     const logo = game.querySelector('logo').textContent;
                     const storeLink = game.querySelector('storeLink').textContent;
-
                     const gameObj = {
                         appID,
                         name,
@@ -55,32 +45,24 @@
                         storeLink,
                         filename
                     };
-
                     gamesArray.push(gameObj);
-
-                    // Update appIDsMap to count occurrences of appID
                     if (!appIDsMap.has(appID)) {
                         appIDsMap.set(appID, new Set());
                     }
                     appIDsMap.get(appID).add(filename);
                 });
             }
-
-            // Filter filenames with 100% of their appIDs duped
             const filenamesWithDupes = [];
             appIDsMap.forEach((files, appID) => {
                 if (files.size === fileList.length) {
                     filenamesWithDupes.push(...files);
                 }
             });
-
-            // Render games list
             renderGamesList(gamesArray);
-
-            // Render filenames with 100% of their appIDs duped
             renderFilenames(filenamesWithDupes);
+            const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
+            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
         }
-
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = ''; // Clear previous list
@@ -98,7 +80,6 @@
                 gamesList.appendChild(listItem);
             });
         }
-
         function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
             xmlContent.innerHTML = ''; // Clear previous content
@@ -109,7 +90,6 @@
                 xmlContent.appendChild(duplicateFileName);
             });
         }
-
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
