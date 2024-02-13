@@ -11,6 +11,10 @@
         <!-- List of games will be populated here -->
     </ul>
 
+    <div id="xml-content">
+        <!-- XML content of files without appID will be printed here -->
+    </div>
+
     <script>
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/index.txt';
@@ -26,6 +30,15 @@
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
+                
+                // Check if the XML contains appID
+                const appID = xml.querySelector('appID');
+                if (appID === null) {
+                    // Print XML content at the bottom of the page
+                    document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
+                    continue; // Skip to the next XML file
+                }
+
                 const games = xml.querySelectorAll('gamesList > games');
 
                 games.forEach(game => {
