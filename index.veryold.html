@@ -3,63 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DB v1.0.0</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        #games-list {
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .game-item {
-            flex: 0 0 calc(33.33% - 20px);
-            margin: 10px;
-            border: 1px solid #ccc;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-        .game-item img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>XML Games List</title>
 </head>
 <body>
-    <h1>Games List (Loading...)</h1>
+    <h1>Games List</h1>
     <ul id="games-list">
+        <!-- List of games will be populated here -->
     </ul>
+
     <div id="xml-content">
+        <!-- XML content of files without appID will be printed here -->
     </div>
+
     <script>
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
+
             const gamesArray = [];
-            const appIDsSet = new Set();
-            const filenamesToLog = new Set();
-            await Promise.all(fileList.map(async (filename) => {
+            const appIDsMap = new Map();
+
+            for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
+                
+                // Check if the XML contains appID
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
+                    // Print XML content at the bottom of the page
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
-                    filenamesToLog.add(filename);
-                    return;
+                    continue; // Skip to the next XML file
                 }
+
                 const games = xml.querySelectorAll('gamesList > games');
+
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    if (!appIDsSet.has(appID)) {
-                        const name = game.querySelector('name').textContent;
-                        const logo = game.querySelector('logo').textContent;
-                        const storeLink = game.querySelector('storeLink').textContent;
+                    const name = game.querySelector('name').textContent;
+                    const logo = game.querySelector('logo').textContent;
+                    const storeLink = game.querySelector('storeLink').textContent;
+
+                    if (!appIDsMap.has(appID)) {
                         const gameObj = {
                             appID,
                             name,
@@ -67,23 +56,29 @@
                             storeLink,
                             filename
                         };
+
                         gamesArray.push(gameObj);
-                        appIDsSet.add(appID);
+                        appIDsMap.set(appID, filename);
                     }
                 });
-            }));
-            gamesArray.sort((a, b) => a.appID.localeCompare(b.appID));
-            renderGamesList(gamesArray);
-            renderFilenames(Array.from(filenamesToLog));
-            const uniqueGamesCount = appIDsSet.size;
-            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
+
+                // Sort games by appID
+                gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
+
+                // Render games list
+                renderGamesList(gamesArray);
+            }
+
+            // Render filenames with duplicate appIDs at the bottom
+            renderFilenames(appIDsMap);
         }
+
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
-            gamesList.innerHTML = '';
+            gamesList.innerHTML = ''; // Clear previous list
+
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
-                listItem.classList.add('game-item');
                 listItem.innerHTML = `
                     <img src="${game.logo}" alt="${game.name} logo">
                     <div>
@@ -95,15 +90,18 @@
                 gamesList.appendChild(listItem);
             });
         }
-        function renderFilenames(filenames) {
+
+        function renderFilenames(appIDsMap) {
             const xmlContent = document.getElementById('xml-content');
-            xmlContent.innerHTML = '';
-            filenames.forEach(filename => {
+            xmlContent.innerHTML = ''; // Clear previous content
+
+            appIDsMap.forEach((filename, appID) => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
+                duplicateFileName.textContent = `Duplicate AppID ${appID} found in file: ${filename}`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
+
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
