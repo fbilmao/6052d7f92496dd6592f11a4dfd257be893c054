@@ -17,7 +17,7 @@
 
     <script>
         async function loadGames() {
-            const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/index.txt';
+            const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
