@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561199477782756</steamID64>
+	<steamID><![CDATA[󠁳⁧⁧ ﷽﷽﷽﷽﷽﷽﷽]]></steamID>
+	<games>
+		<game>
+			<appID>714010</appID>
+			<name><![CDATA[Aimlabs]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/714010/capsule_184x69.jpg?t=1702325087]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/714010]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561199477782756/stats/714010]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/714010/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>730</appID>
+			<name><![CDATA[Counter-Strike 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1698860631]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/730]]></storeLink>
+			<hoursOnRecord>7.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561199477782756/stats/CSGO]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/CSGO/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>440</appID>
+			<name><![CDATA[Team Fortress 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/440/capsule_184x69.jpg?t=1695767057]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/440]]></storeLink>
+			<hoursOnRecord>0.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561199477782756/stats/TF2]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TF2/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>304930</appID>
+			<name><![CDATA[Unturned]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/304930/capsule_184x69.jpg?t=1707174662]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/304930]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561199477782756/stats/304930]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/304930/achievements/]]></globalStatsLink>
+		</game>
+	</games>
+</gamesList>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Games List</title>
+</head>
+<body>
+    <h1>Games List</h1>
+    <ul id="games-list">
+        <!-- List of games will be populated here -->
+    </ul>
+
+    <script>
+        async function loadGames() {
+            const response = await fetch('/results/');
+            const data = await response.text();
+            const parser = new DOMParser();
+            const xml = parser.parseFromString(data, 'text/xml');
+            const games = xml.querySelectorAll('gamesList > games');
+            const appIDs = new Set();
+
+            games.forEach(game => {
+                const appID = game.querySelector('appID').textContent;
+                if (!appIDs.has(appID)) {
+                    const name = game.querySelector('name').textContent;
+                    const logo = game.querySelector('logo').textContent;
+                    const storeLink = game.querySelector('storeLink').textContent;
+
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <img src="${logo}" alt="${name} logo">
+                        <div>
+                            <h2>${name}</h2>
+                            <p>App ID: ${appID}</p>
+                            <a href="${storeLink}" target="_blank">Store Link</a>
+                        </div>
+                    `;
+                    document.getElementById('games-list').appendChild(listItem);
+                    appIDs.add(appID);
+                }
+            });
+        }
+
+        loadGames().catch(error => {
+            console.error('Error loading games:', error);
+        });
+    </script>
+</body>
+</html>

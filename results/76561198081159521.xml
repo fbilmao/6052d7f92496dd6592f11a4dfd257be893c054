@@ -1,0 +1,976 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561198081159521</steamID64>
+	<steamID><![CDATA[martin.limberger58]]></steamID>
+	<games>
+		<game>
+			<appID>244210</appID>
+			<name><![CDATA[Assetto Corsa]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/244210/capsule_184x69.jpg?t=1686917372]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/244210]]></storeLink>
+			<hoursLast2Weeks>81.6</hoursLast2Weeks>
+			<hoursOnRecord>392</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/244210]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/244210/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>516750</appID>
+			<name><![CDATA[My Summer Car]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/516750/capsule_184x69.jpg?t=1603195332]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/516750]]></storeLink>
+			<hoursLast2Weeks>69.6</hoursLast2Weeks>
+			<hoursOnRecord>451</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/516750]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/516750/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>47870</appID>
+			<name><![CDATA[Need for Speed: Hot Pursuit]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/47870/capsule_184x69.jpg?t=1615216487]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/47870]]></storeLink>
+			<hoursLast2Weeks>11.9</hoursLast2Weeks>
+			<hoursOnRecord>56</hoursOnRecord>
+		</game>
+		<game>
+			<appID>737800</appID>
+			<name><![CDATA[F1 2018]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/737800/capsule_184x69.jpg?t=1647013434]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/737800]]></storeLink>
+			<hoursLast2Weeks>7.1</hoursLast2Weeks>
+			<hoursOnRecord>294</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/737800]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/737800/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>646910</appID>
+			<name><![CDATA[The Crew 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/646910/capsule_184x69.jpg?t=1699983385]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/646910]]></storeLink>
+			<hoursLast2Weeks>6.8</hoursLast2Weeks>
+			<hoursOnRecord>42</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/646910]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/646910/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>621830</appID>
+			<name><![CDATA[WRC 7]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/621830/capsule_184x69.jpg?t=1592484786]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/621830]]></storeLink>
+			<hoursLast2Weeks>5.5</hoursLast2Weeks>
+			<hoursOnRecord>44</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/621830]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/621830/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>17430</appID>
+			<name><![CDATA[Need for Speed: Undercover]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/17430/capsule_184x69.jpg?t=1633450349]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/17430]]></storeLink>
+			<hoursLast2Weeks>5.5</hoursLast2Weeks>
+			<hoursOnRecord>20</hoursOnRecord>
+		</game>
+		<game>
+			<appID>805550</appID>
+			<name><![CDATA[Assetto Corsa Competizione]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/805550/capsule_184x69.jpg?t=1706118895]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/805550]]></storeLink>
+			<hoursLast2Weeks>5.3</hoursLast2Weeks>
+			<hoursOnRecord>41</hoursOnRecord>
+		</game>
+		<game>
+			<appID>477770</appID>
+			<name><![CDATA[Ride 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/477770/capsule_184x69.jpg?t=1680084573]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/477770]]></storeLink>
+			<hoursLast2Weeks>4.8</hoursLast2Weeks>
+			<hoursOnRecord>32</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/477770]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/477770/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>928600</appID>
+			<name><![CDATA[F1 2019]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/928600/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/928600]]></storeLink>
+			<hoursLast2Weeks>4.6</hoursLast2Weeks>
+			<hoursOnRecord>375</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/928600]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/928600/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>730</appID>
+			<name><![CDATA[Counter-Strike 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1698860631]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/730]]></storeLink>
+			<hoursLast2Weeks>3.6</hoursLast2Weeks>
+			<hoursOnRecord>355</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/CSGO]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/CSGO/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>255220</appID>
+			<name><![CDATA[GRID Autosport]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/255220/capsule_184x69.jpg?t=1593617496]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/255220]]></storeLink>
+			<hoursLast2Weeks>3.2</hoursLast2Weeks>
+			<hoursOnRecord>77</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/255220]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/255220/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>218</appID>
+			<name><![CDATA[Source SDK Base 2007]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/218/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/218]]></storeLink>
+			<hoursLast2Weeks>3.1</hoursLast2Weeks>
+			<hoursOnRecord>30</hoursOnRecord>
+		</game>
+		<game>
+			<appID>228380</appID>
+			<name><![CDATA[Wreckfest]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/228380/capsule_184x69.jpg?t=1696917323]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/228380]]></storeLink>
+			<hoursLast2Weeks>3.0</hoursLast2Weeks>
+			<hoursOnRecord>25</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/228380]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/228380/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>421020</appID>
+			<name><![CDATA[DiRT 4]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/421020/capsule_184x69.jpg?t=1667844319]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/421020]]></storeLink>
+			<hoursLast2Weeks>3.0</hoursLast2Weeks>
+			<hoursOnRecord>29</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/421020]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/421020/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>44350</appID>
+			<name><![CDATA[GRID 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44350/capsule_184x69.jpg?t=1571948291]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44350]]></storeLink>
+			<hoursLast2Weeks>2.8</hoursLast2Weeks>
+			<hoursOnRecord>18.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/GRID2]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/GRID2/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>286570</appID>
+			<name><![CDATA[F1 2015]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/286570/capsule_184x69.jpg?t=1647013399]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/286570]]></storeLink>
+			<hoursLast2Weeks>2.6</hoursLast2Weeks>
+			<hoursOnRecord>73</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/286570]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/286570/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>310560</appID>
+			<name><![CDATA[DiRT Rally]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/310560/capsule_184x69.jpg?t=1667844327]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/310560]]></storeLink>
+			<hoursLast2Weeks>1.9</hoursLast2Weeks>
+			<hoursOnRecord>20</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/310560]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/310560/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>24870</appID>
+			<name><![CDATA[Need for Speed: SHIFT]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/24870/capsule_184x69.jpg?t=1622575105]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/24870]]></storeLink>
+			<hoursLast2Weeks>1.7</hoursLast2Weeks>
+			<hoursOnRecord>38</hoursOnRecord>
+		</game>
+		<game>
+			<appID>236390</appID>
+			<name><![CDATA[War Thunder]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/236390/capsule_184x69.jpg?t=1706020414]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/236390]]></storeLink>
+			<hoursLast2Weeks>1.6</hoursLast2Weeks>
+			<hoursOnRecord>6.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/WarThunder]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/WarThunder/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>211500</appID>
+			<name><![CDATA[RaceRoom Racing Experience ]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/211500/capsule_184x69.jpg?t=1700130566]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/211500]]></storeLink>
+			<hoursLast2Weeks>1.6</hoursLast2Weeks>
+			<hoursOnRecord>116</hoursOnRecord>
+		</game>
+		<game>
+			<appID>6220</appID>
+			<name><![CDATA[FlatOut]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/6220/capsule_184x69.jpg?t=1570209735]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/6220]]></storeLink>
+			<hoursLast2Weeks>1.3</hoursLast2Weeks>
+			<hoursOnRecord>4.6</hoursOnRecord>
+		</game>
+		<game>
+			<appID>24740</appID>
+			<name><![CDATA[Burnout Paradise: The Ultimate Box]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/24740/capsule_184x69.jpg?t=1591283062]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/24740]]></storeLink>
+			<hoursLast2Weeks>1.3</hoursLast2Weeks>
+			<hoursOnRecord>6.8</hoursOnRecord>
+		</game>
+		<game>
+			<appID>611800</appID>
+			<name><![CDATA[Jidousha Shakai]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/611800/capsule_184x69.jpg?t=1602753897]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/611800]]></storeLink>
+			<hoursLast2Weeks>1.2</hoursLast2Weeks>
+			<hoursOnRecord>9.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/611800]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/611800/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>208500</appID>
+			<name><![CDATA[F1 2012]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/208500/capsule_184x69.jpg?t=1647013383]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/208500]]></storeLink>
+			<hoursLast2Weeks>1.2</hoursLast2Weeks>
+			<hoursOnRecord>17.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/F12012]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/F12012/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>226580</appID>
+			<name><![CDATA[F1 2014]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/226580/capsule_184x69.jpg?t=1647013379]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/226580]]></storeLink>
+			<hoursLast2Weeks>1.1</hoursLast2Weeks>
+			<hoursOnRecord>38</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/226580]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/226580/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>266410</appID>
+			<name><![CDATA[iRacing]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/266410/capsule_184x69.jpg?t=1685469538]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/266410]]></storeLink>
+			<hoursLast2Weeks>0.8</hoursLast2Weeks>
+			<hoursOnRecord>1.3</hoursOnRecord>
+		</game>
+		<game>
+			<appID>391040</appID>
+			<name><![CDATA[F1 2016]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/391040/capsule_184x69.jpg?t=1647013405]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/391040]]></storeLink>
+			<hoursLast2Weeks>0.7</hoursLast2Weeks>
+			<hoursOnRecord>342</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/391040]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/391040/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>365960</appID>
+			<name><![CDATA[rFactor 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/365960/capsule_184x69.jpg?t=1700583338]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/365960]]></storeLink>
+			<hoursLast2Weeks>0.7</hoursLast2Weeks>
+			<hoursOnRecord>89</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/365960]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/365960/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>456780</appID>
+			<name><![CDATA[DUCATI - 90th Anniversary]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/456780/capsule_184x69.jpg?t=1671719589]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/456780]]></storeLink>
+			<hoursLast2Weeks>0.5</hoursLast2Weeks>
+			<hoursOnRecord>15.4</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/456780]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/456780/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>250820</appID>
+			<name><![CDATA[SteamVR]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/250820/capsule_184x69.jpg?t=1574723957]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/250820]]></storeLink>
+			<hoursLast2Weeks>0.5</hoursLast2Weeks>
+			<hoursOnRecord>2.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>458770</appID>
+			<name><![CDATA[WRC 6]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/458770/capsule_184x69.jpg?t=1594977301]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/458770]]></storeLink>
+			<hoursLast2Weeks>0.4</hoursLast2Weeks>
+			<hoursOnRecord>8.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/458770]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/458770/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>241560</appID>
+			<name><![CDATA[The Crew]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/241560/capsule_184x69.jpg?t=1702566109]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/241560]]></storeLink>
+			<hoursLast2Weeks>0.4</hoursLast2Weeks>
+			<hoursOnRecord>10.9</hoursOnRecord>
+		</game>
+		<game>
+			<appID>9930</appID>
+			<name><![CDATA[Test Drive Unlimited 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/9930/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/9930]]></storeLink>
+			<hoursLast2Weeks>0.3</hoursLast2Weeks>
+			<hoursOnRecord>10.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/TestDriveUnlimited2]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TestDriveUnlimited2/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>568880</appID>
+			<name><![CDATA[Sniper Elite 4 Dedicated Server]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/568880/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/568880]]></storeLink>
+			<hoursLast2Weeks>0.3</hoursLast2Weeks>
+			<hoursOnRecord>0.3</hoursOnRecord>
+		</game>
+		<game>
+			<appID>211970</appID>
+			<name><![CDATA[Test Drive®: Ferrari Racing Legends]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/211970/capsule_184x69.jpg?t=1447355830]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/211970]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>2.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/TestDriveFerrariRacingLegends]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TestDriveFerrariRacingLegends/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>8600</appID>
+			<name><![CDATA[RACE 07]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/8600/capsule_184x69.jpg?t=1478078194]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/8600]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>27</hoursOnRecord>
+		</game>
+		<game>
+			<appID>440</appID>
+			<name><![CDATA[Team Fortress 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/440/capsule_184x69.jpg?t=1695767057]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/440]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>0.4</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/TF2]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TF2/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>378860</appID>
+			<name><![CDATA[Project CARS 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/378860/capsule_184x69.jpg?t=1663714740]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/378860]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>66</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/378860]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/378860/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>558260</appID>
+			<name><![CDATA[Gravel]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/558260/capsule_184x69.jpg?t=1685547809]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/558260]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>4.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/558260]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/558260/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>12750</appID>
+			<name><![CDATA[GRID]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/12750/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/12750]]></storeLink>
+			<hoursLast2Weeks>0.2</hoursLast2Weeks>
+			<hoursOnRecord>24</hoursOnRecord>
+		</game>
+		<game>
+			<appID>349700</appID>
+			<name><![CDATA[Aftermath]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/349700/capsule_184x69.jpg?t=1634080535]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/349700]]></storeLink>
+			<hoursOnRecord>0.5</hoursOnRecord>
+		</game>
+		<game>
+			<appID>203290</appID>
+			<name><![CDATA[America's Army: Proving Grounds]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/203290/capsule_184x69.jpg?t=1604338987]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/203290]]></storeLink>
+			<hoursOnRecord>0.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/203290]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/203290/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>113400</appID>
+			<name><![CDATA[APB Reloaded]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/113400/capsule_184x69.jpg?t=1704827961]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/113400]]></storeLink>
+			<hoursOnRecord>1.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/APBReloaded]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/APBReloaded/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>431600</appID>
+			<name><![CDATA[Automobilista]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/431600/capsule_184x69.jpg?t=1572643369]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/431600]]></storeLink>
+			<hoursOnRecord>24.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/431600]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/431600/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>623090</appID>
+			<name><![CDATA[BAJA: Edge of Control HD]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/623090/capsule_184x69.jpg?t=1561961426]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/623090]]></storeLink>
+			<hoursOnRecord>0.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/623090]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/623090/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>359800</appID>
+			<name><![CDATA[Copa Petrobras de Marcas]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/359800/capsule_184x69.jpg?t=1447371605]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/359800]]></storeLink>
+			<hoursOnRecord>3.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>570</appID>
+			<name><![CDATA[Dota 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_184x69.jpg?t=1707435904]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/570]]></storeLink>
+			<hoursOnRecord>0.6</hoursOnRecord>
+		</game>
+		<game>
+			<appID>268850</appID>
+			<name><![CDATA[EVGA Precision X1]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/268850/capsule_184x69.jpg?t=1585764502]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/268850]]></storeLink>
+			<hoursOnRecord>0.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/268850]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/268850/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>44310</appID>
+			<name><![CDATA[F1 2010™]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44310/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44310]]></storeLink>
+			<hoursOnRecord>8.2</hoursOnRecord>
+		</game>
+		<game>
+			<appID>44360</appID>
+			<name><![CDATA[F1 2011]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44360/capsule_184x69.jpg?t=1620244285]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44360]]></storeLink>
+			<hoursOnRecord>2.2</hoursOnRecord>
+		</game>
+		<game>
+			<appID>515220</appID>
+			<name><![CDATA[F1 2017]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/515220/capsule_184x69.jpg?t=1647013419]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/515220]]></storeLink>
+			<hoursOnRecord>207.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/515220]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/515220/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>2990</appID>
+			<name><![CDATA[FlatOut 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/2990/capsule_184x69.jpg?t=1570210036]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/2990]]></storeLink>
+			<hoursOnRecord>4.9</hoursOnRecord>
+		</game>
+		<game>
+			<appID>201510</appID>
+			<name><![CDATA[Flatout 3]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/201510/capsule_184x69.jpg?t=1570212409]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/201510]]></storeLink>
+			<hoursOnRecord>0.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/Flatout3]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/Flatout3/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>12360</appID>
+			<name><![CDATA[FlatOut: Ultimate Carnage]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/12360/capsule_184x69.jpg?t=1570634248]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/12360]]></storeLink>
+			<hoursOnRecord>0.2</hoursOnRecord>
+		</game>
+		<game>
+			<appID>348250</appID>
+			<name><![CDATA[Google Earth VR]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/348250/capsule_184x69.jpg?t=1508799201]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/348250]]></storeLink>
+		</game>
+		<game>
+			<appID>769800</appID>
+			<name><![CDATA[Gravel Free car Acciona]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769800/capsule_184x69.jpg?t=1676989496]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769800]]></storeLink>
+		</game>
+		<game>
+			<appID>769810</appID>
+			<name><![CDATA[Gravel Free car BMW X6 Trophy Truck]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769810/capsule_184x69.jpg?t=1676989453]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769810]]></storeLink>
+		</game>
+		<game>
+			<appID>769790</appID>
+			<name><![CDATA[Gravel Free car Bowler Bulldog]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769790/capsule_184x69.jpg?t=1676989556]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769790]]></storeLink>
+		</game>
+		<game>
+			<appID>769820</appID>
+			<name><![CDATA[Gravel Free car Ford Bronco]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769820/capsule_184x69.jpg?t=1676989218]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769820]]></storeLink>
+		</game>
+		<game>
+			<appID>769750</appID>
+			<name><![CDATA[Gravel Ice and Fire]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769750/capsule_184x69.jpg?t=1676990168]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769750]]></storeLink>
+		</game>
+		<game>
+			<appID>769760</appID>
+			<name><![CDATA[Gravel King of Buggies]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769760/capsule_184x69.jpg?t=1676990112]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769760]]></storeLink>
+		</game>
+		<game>
+			<appID>769740</appID>
+			<name><![CDATA[Gravel Porsche Rallye pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/769740/capsule_184x69.jpg?t=1676990196]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/769740]]></storeLink>
+		</game>
+		<game>
+			<appID>221162</appID>
+			<name><![CDATA[GRID 2 GTR Racing Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/221162/capsule_184x69.jpg?t=1565280881]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/221162]]></storeLink>
+		</game>
+		<game>
+			<appID>44690</appID>
+			<name><![CDATA[GT Legends]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44690/capsule_184x69.jpg?t=1478077613]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44690]]></storeLink>
+		</game>
+		<game>
+			<appID>44650</appID>
+			<name><![CDATA[GT Power Expansion]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44650/capsule_184x69.jpg?t=1478078091]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44650]]></storeLink>
+		</game>
+		<game>
+			<appID>44600</appID>
+			<name><![CDATA[GTR - FIA GT Racing Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44600/capsule_184x69.jpg?t=1478078094]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44600]]></storeLink>
+			<hoursOnRecord>0.1</hoursOnRecord>
+		</game>
+		<game>
+			<appID>8790</appID>
+			<name><![CDATA[GTR 2 - FIA GT Racing Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/8790/capsule_184x69.jpg?t=1478078097]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/8790]]></storeLink>
+		</game>
+		<game>
+			<appID>8660</appID>
+			<name><![CDATA[GTR Evolution]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/8660/capsule_184x69.jpg?t=1478078101]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/8660]]></storeLink>
+		</game>
+		<game>
+			<appID>355130</appID>
+			<name><![CDATA[MotoGP™15]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/355130/capsule_184x69.jpg?t=1683647187]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/355130]]></storeLink>
+			<hoursOnRecord>8.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/355130]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/355130/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>392430</appID>
+			<name><![CDATA[MotoGP™15 GP de Portugal Circuito Estoril]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/392430/capsule_184x69.jpg?t=1489747180]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/392430]]></storeLink>
+		</game>
+		<game>
+			<appID>392420</appID>
+			<name><![CDATA[MotoGP™15 Red Bull Rookies Cup]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/392420/capsule_184x69.jpg?t=1489747214]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/392420]]></storeLink>
+		</game>
+		<game>
+			<appID>373200</appID>
+			<name><![CDATA[MotoGP™15: 4 Strokes Champions and Events]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/373200/capsule_184x69.jpg?t=1489747256]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/373200]]></storeLink>
+		</game>
+		<game>
+			<appID>374800</appID>
+			<name><![CDATA[MotoGP™15: Moto2™ and Moto3™]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/374800/capsule_184x69.jpg?t=1447375481]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/374800]]></storeLink>
+		</game>
+		<game>
+			<appID>374810</appID>
+			<name><![CDATA[MotoGP™15: Season Pass]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/374810/capsule_184x69.jpg?t=1489747301]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/374810]]></storeLink>
+		</game>
+		<game>
+			<appID>526670</appID>
+			<name><![CDATA[MotoGP™ Legendary Bikes]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/526670/capsule_184x69.jpg?t=1489746420]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/526670]]></storeLink>
+		</game>
+		<game>
+			<appID>446750</appID>
+			<name><![CDATA[Portal Stories: VR]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/446750/capsule_184x69.jpg?t=1569269519]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/446750]]></storeLink>
+		</game>
+		<game>
+			<appID>234630</appID>
+			<name><![CDATA[Project CARS]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/234630/capsule_184x69.jpg?t=1667844333]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/234630]]></storeLink>
+			<hoursOnRecord>160.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/234630]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/234630/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>334773</appID>
+			<name><![CDATA[Project CARS - Audi Ruapuna Speedway Expansion]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/334773/capsule_184x69.jpg?t=1667853415]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/334773]]></storeLink>
+		</game>
+		<game>
+			<appID>334771</appID>
+			<name><![CDATA[Project CARS - Modified Car Pack ]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/334771/capsule_184x69.jpg?t=1667853415]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/334771]]></storeLink>
+		</game>
+		<game>
+			<appID>334774</appID>
+			<name><![CDATA[Project CARS - Old Vs New Car Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/334774/capsule_184x69.jpg?t=1667853415]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/334774]]></storeLink>
+		</game>
+		<game>
+			<appID>429180</appID>
+			<name><![CDATA[Project CARS - Pagani Edition]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/429180/capsule_184x69.jpg?t=1667933888]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/429180]]></storeLink>
+			<hoursOnRecord>3.1</hoursOnRecord>
+		</game>
+		<game>
+			<appID>1112400</appID>
+			<name><![CDATA[Project Torque]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1112400/capsule_184x69.jpg?t=1664929900]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1112400]]></storeLink>
+			<hoursOnRecord>0.7</hoursOnRecord>
+		</game>
+		<game>
+			<appID>44630</appID>
+			<name><![CDATA[RACE 07 - Formula RaceRoom Add-On]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44630/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44630]]></storeLink>
+		</game>
+		<game>
+			<appID>4290</appID>
+			<name><![CDATA[RACE: Caterham Expansion]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/4290/capsule_184x69.jpg?t=1478078209]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/4290]]></storeLink>
+		</game>
+		<game>
+			<appID>4230</appID>
+			<name><![CDATA[Race: The WTCC Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/4230/capsule_184x69.jpg?t=1478078220]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/4230]]></storeLink>
+			<hoursOnRecord>0.3</hoursOnRecord>
+		</game>
+		<game>
+			<appID>346610</appID>
+			<name><![CDATA[Racecraft]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/346610/capsule_184x69.jpg?t=1657735989]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/346610]]></storeLink>
+			<hoursOnRecord>1.1</hoursOnRecord>
+		</game>
+		<game>
+			<appID>8640</appID>
+			<name><![CDATA[RACE On]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/8640/capsule_184x69.jpg?t=1478078206]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/8640]]></storeLink>
+		</game>
+		<game>
+			<appID>381750</appID>
+			<name><![CDATA[RC Simulation 2.0]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/381750/capsule_184x69.jpg?t=1572587305]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/381750]]></storeLink>
+			<hoursOnRecord>1.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/381750]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/381750/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>464310</appID>
+			<name><![CDATA[Real Events 1: 2016 MotoGP™ Season]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/464310/capsule_184x69.jpg?t=1476354783]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/464310]]></storeLink>
+		</game>
+		<game>
+			<appID>464320</appID>
+			<name><![CDATA[Real Events 2: 2016 MotoGP™ Season]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/464320/capsule_184x69.jpg?t=1481791511]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/464320]]></storeLink>
+		</game>
+		<game>
+			<appID>464270</appID>
+			<name><![CDATA[Real Events: 2015 MotoGP™ Season]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/464270/capsule_184x69.jpg?t=1466061838]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/464270]]></storeLink>
+		</game>
+		<game>
+			<appID>339790</appID>
+			<name><![CDATA[rFactor]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/339790/capsule_184x69.jpg?t=1478097701]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/339790]]></storeLink>
+			<hoursOnRecord>11.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/339790]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/339790/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>392880</appID>
+			<name><![CDATA[RIDE - 2015 Top Bikes Pack 1]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/392880/capsule_184x69.jpg?t=1489747371]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/392880]]></storeLink>
+		</game>
+		<game>
+			<appID>392900</appID>
+			<name><![CDATA[RIDE - 2015 Top Bikes Pack 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/392900/capsule_184x69.jpg?t=1489747403]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/392900]]></storeLink>
+		</game>
+		<game>
+			<appID>583730</appID>
+			<name><![CDATA[Ride 2 2017 Top Bikes Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/583730/capsule_184x69.jpg?t=1676996581]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/583730]]></storeLink>
+		</game>
+		<game>
+			<appID>515090</appID>
+			<name><![CDATA[Ride 2 Aprilia and Suzuki Bonus Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/515090/capsule_184x69.jpg?t=1677081104]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/515090]]></storeLink>
+		</game>
+		<game>
+			<appID>515120</appID>
+			<name><![CDATA[Ride 2 Ducati Bikes Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/515120/capsule_184x69.jpg?t=1677080895]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/515120]]></storeLink>
+		</game>
+		<game>
+			<appID>562060</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/562060/capsule_184x69.jpg?t=1677079508]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/562060]]></storeLink>
+		</game>
+		<game>
+			<appID>563790</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 3]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/563790/capsule_184x69.jpg?t=1676999915]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/563790]]></storeLink>
+		</game>
+		<game>
+			<appID>571730</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 4]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/571730/capsule_184x69.jpg?t=1676996704]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/571730]]></storeLink>
+		</game>
+		<game>
+			<appID>578240</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 5]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/578240/capsule_184x69.jpg?t=1676996653]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/578240]]></storeLink>
+		</game>
+		<game>
+			<appID>592830</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 6]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/592830/capsule_184x69.jpg?t=1676996505]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/592830]]></storeLink>
+		</game>
+		<game>
+			<appID>592840</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 7]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/592840/capsule_184x69.jpg?t=1676996381]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/592840]]></storeLink>
+		</game>
+		<game>
+			<appID>592850</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 8]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/592850/capsule_184x69.jpg?t=1676996334]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/592850]]></storeLink>
+		</game>
+		<game>
+			<appID>592860</appID>
+			<name><![CDATA[Ride 2 Free Bikes Pack 9]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/592860/capsule_184x69.jpg?t=1676996248]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/592860]]></storeLink>
+		</game>
+		<game>
+			<appID>515100</appID>
+			<name><![CDATA[Ride 2 Kawasaki and Ducati Bonus Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/515100/capsule_184x69.jpg?t=1677081012]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/515100]]></storeLink>
+		</game>
+		<game>
+			<appID>515110</appID>
+			<name><![CDATA[Ride 2 Limited Edition Bikes Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/515110/capsule_184x69.jpg?t=1677080962]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/515110]]></storeLink>
+		</game>
+		<game>
+			<appID>345660</appID>
+			<name><![CDATA[RIDE: Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/345660/capsule_184x69.jpg?t=1696952749]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/345660]]></storeLink>
+			<hoursOnRecord>8.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/345660]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/345660/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>345900</appID>
+			<name><![CDATA[RIDE: Yamaha 2015 Bike Models]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/345900/capsule_184x69.jpg?t=1489749652]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/345900]]></storeLink>
+		</game>
+		<game>
+			<appID>347450</appID>
+			<name><![CDATA[RIDE: Yamaha Historical Bikes]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/347450/capsule_184x69.jpg?t=1447368431]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/347450]]></storeLink>
+		</game>
+		<game>
+			<appID>300380</appID>
+			<name><![CDATA[Road Redemption]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/300380/capsule_184x69.jpg?t=1706744318]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/300380]]></storeLink>
+			<hoursOnRecord>2.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/300380]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/300380/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>464290</appID>
+			<name><![CDATA[Rossi Ford Focus Rally car 2009]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/464290/capsule_184x69.jpg?t=1489746349]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/464290]]></storeLink>
+		</game>
+		<game>
+			<appID>496190</appID>
+			<name><![CDATA[Senza Peso]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/496190/capsule_184x69.jpg?t=1478014109]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/496190]]></storeLink>
+		</game>
+		<game>
+			<appID>47920</appID>
+			<name><![CDATA[Shift 2 Unleashed]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/47920/capsule_184x69.jpg?t=1622575073]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/47920]]></storeLink>
+			<hoursOnRecord>4.1</hoursOnRecord>
+		</game>
+		<game>
+			<appID>8690</appID>
+			<name><![CDATA[STCC: The Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/8690/capsule_184x69.jpg?t=1478078294]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/8690]]></storeLink>
+		</game>
+		<game>
+			<appID>44620</appID>
+			<name><![CDATA[STCC II]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44620/capsule_184x69.jpg?t=1478078289]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44620]]></storeLink>
+		</game>
+		<game>
+			<appID>273840</appID>
+			<name><![CDATA[Stock Car Extreme]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/273840/capsule_184x69.jpg?t=1572643404]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/273840]]></storeLink>
+			<hoursOnRecord>23.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>451980</appID>
+			<name><![CDATA[The Body VR: Journey Inside a Cell]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/451980/capsule_184x69.jpg?t=1484037241]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/451980]]></storeLink>
+		</game>
+		<game>
+			<appID>44660</appID>
+			<name><![CDATA[The Retro Expansion]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44660/capsule_184x69.jpg?t=1478078299]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44660]]></storeLink>
+		</game>
+		<game>
+			<appID>44670</appID>
+			<name><![CDATA[The WTCC 2010 Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/44670/capsule_184x69.jpg?t=1478078303]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/44670]]></storeLink>
+		</game>
+		<game>
+			<appID>626610</appID>
+			<name><![CDATA[TT Isle of Man: Ride on the Edge]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/626610/capsule_184x69.jpg?t=1670410957]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/626610]]></storeLink>
+			<hoursOnRecord>7.4</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/626610]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/626610/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>438430</appID>
+			<name><![CDATA[Valentino Rossi The Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/438430/capsule_184x69.jpg?t=1671718569]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/438430]]></storeLink>
+			<hoursOnRecord>29.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/438430]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/438430/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>264120</appID>
+			<name><![CDATA[Victory: The Age of Racing]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/264120/capsule_184x69.jpg?t=1612974255]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/264120]]></storeLink>
+			<hoursOnRecord>2.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>107900</appID>
+			<name><![CDATA[War Inc. Battlezone]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/107900/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/107900]]></storeLink>
+			<hoursOnRecord>0.5</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198081159521/stats/107900]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/107900/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>623880</appID>
+			<name><![CDATA[World of Speed]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/623880/capsule_184x69.jpg?t=1545802678]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/623880]]></storeLink>
+			<hoursOnRecord>2.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>272860</appID>
+			<name><![CDATA[Wreckfest Throw-A-Santa + Sneak Peek 2.0]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/272860/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/272860]]></storeLink>
+			<hoursOnRecord>0.8</hoursOnRecord>
+		</game>
+		<game>
+			<appID>747240</appID>
+			<name><![CDATA[XL1-ClippingPoint]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/747240/capsule_184x69.jpg?t=1519220562]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/747240]]></storeLink>
+			<hoursOnRecord>0.5</hoursOnRecord>
+		</game>
+	</games>
+</gamesList>

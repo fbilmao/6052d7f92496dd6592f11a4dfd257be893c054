@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561198302900622</steamID64>
+	<steamID><![CDATA[马戏团当红小丑]]></steamID>
+	<games>
+		<game>
+			<appID>1091500</appID>
+			<name><![CDATA[Cyberpunk 2077]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/capsule_184x69.jpg?t=1706698946]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1091500]]></storeLink>
+			<hoursLast2Weeks>3.0</hoursLast2Weeks>
+			<hoursOnRecord>46</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1091500]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1091500/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>431960</appID>
+			<name><![CDATA[Wallpaper Engine]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/431960/capsule_184x69.jpg?t=1665921297]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/431960]]></storeLink>
+			<hoursLast2Weeks>2.4</hoursLast2Weeks>
+			<hoursOnRecord>12.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/431960]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/431960/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>518030</appID>
+			<name><![CDATA[Aim Hero]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/518030/capsule_184x69.jpg?t=1522503726]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/518030]]></storeLink>
+			<hoursOnRecord>0.4</hoursOnRecord>
+		</game>
+		<game>
+			<appID>945360</appID>
+			<name><![CDATA[Among Us]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/945360/capsule_184x69.jpg?t=1698177355]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/945360]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/945360]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/945360/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1172470</appID>
+			<name><![CDATA[Apex Legends]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/capsule_184x69.jpg?t=1706735551]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1172470]]></storeLink>
+			<hoursOnRecord>386.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1172470]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1172470/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>238460</appID>
+			<name><![CDATA[BattleBlock Theater]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/238460/capsule_184x69.jpg?t=1676588712]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/238460]]></storeLink>
+			<hoursOnRecord>7.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/238460]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/238460/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1071870</appID>
+			<name><![CDATA[Biped]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1071870/capsule_184x69.jpg?t=1701857568]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1071870]]></storeLink>
+			<hoursOnRecord>1.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1071870]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1071870/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>204360</appID>
+			<name><![CDATA[Castle Crashers]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/204360/capsule_184x69.jpg?t=1706575422]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/204360]]></storeLink>
+			<hoursOnRecord>22.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/204360]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/204360/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>204372</appID>
+			<name><![CDATA[Castle Crashers - Blacksmith Pack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/204372/capsule_184x69.jpg?t=1707165692]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/204372]]></storeLink>
+		</game>
+		<game>
+			<appID>736190</appID>
+			<name><![CDATA[Chinese Parents]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/736190/capsule_184x69.jpg?t=1683700346]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/736190]]></storeLink>
+			<hoursOnRecord>40.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/736190]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/736190/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>730</appID>
+			<name><![CDATA[Counter-Strike 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1698860631]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/730]]></storeLink>
+			<hoursOnRecord>44.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/CSGO]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/CSGO/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>322330</appID>
+			<name><![CDATA[Don't Starve Together]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/322330/capsule_184x69_alt_assets_42.jpg?t=1703009096]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/322330]]></storeLink>
+			<hoursOnRecord>5.8</hoursOnRecord>
+		</game>
+		<game>
+			<appID>570</appID>
+			<name><![CDATA[Dota 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_184x69.jpg?t=1707435904]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/570]]></storeLink>
+			<hoursOnRecord>190.5</hoursOnRecord>
+		</game>
+		<game>
+			<appID>1483870</appID>
+			<name><![CDATA[Draw & Guess]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1483870/capsule_184x69.jpg?t=1703208328]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1483870]]></storeLink>
+			<hoursOnRecord>3.3</hoursOnRecord>
+		</game>
+		<game>
+			<appID>312530</appID>
+			<name><![CDATA[Duck Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/312530/capsule_184x69.jpg?t=1606522299]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/312530]]></storeLink>
+			<hoursOnRecord>1.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/312530]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/312530/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1435790</appID>
+			<name><![CDATA[Escape Simulator]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1435790/capsule_184x69.jpg?t=1705914259]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1435790]]></storeLink>
+			<hoursOnRecord>1.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1435790]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1435790/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1097150</appID>
+			<name><![CDATA[Fall Guys]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1097150/capsule_184x69.jpg?t=1698763175]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1097150]]></storeLink>
+			<hoursOnRecord>0.4</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1097150]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1097150/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>939960</appID>
+			<name><![CDATA[Far Cry New Dawn]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/939960/capsule_184x69.jpg?t=1694554850]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/939960]]></storeLink>
+			<hoursOnRecord>7.0</hoursOnRecord>
+		</game>
+		<game>
+			<appID>240720</appID>
+			<name><![CDATA[Getting Over It with Bennett Foddy]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/240720/capsule_184x69.jpg?t=1666987027]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/240720]]></storeLink>
+			<hoursOnRecord>6.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/240720]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/240720/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1568590</appID>
+			<name><![CDATA[Goose Goose Duck]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1568590/capsule_184x69.jpg?t=1706655574]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1568590]]></storeLink>
+			<hoursOnRecord>20.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1568590]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1568590/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>477160</appID>
+			<name><![CDATA[Human Fall Flat]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/477160/capsule_184x69.jpg?t=1705400786]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/477160]]></storeLink>
+			<hoursOnRecord>4.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/477160]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/477160/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>95400</appID>
+			<name><![CDATA[ibb & obb]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/95400/capsule_184x69.jpg?t=1590420876]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/95400]]></storeLink>
+			<hoursOnRecord>5.7</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/95400]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/95400/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>299190</appID>
+			<name><![CDATA[ibb & obb - Original Soundtrack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/299190/capsule_184x69.jpg?t=1694087570]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/299190]]></storeLink>
+		</game>
+		<game>
+			<appID>1426210</appID>
+			<name><![CDATA[It Takes Two]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1426210/capsule_184x69.jpg?t=1705372806]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1426210]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1426210]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1426210/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>550</appID>
+			<name><![CDATA[Left 4 Dead 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/550/capsule_184x69.jpg?t=1675801903]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/550]]></storeLink>
+			<hoursOnRecord>25.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/L4D2]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/L4D2/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1966720</appID>
+			<name><![CDATA[Lethal Company]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1966720/capsule_184x69.jpg?t=1700231592]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1966720]]></storeLink>
+			<hoursOnRecord>27.5</hoursOnRecord>
+		</game>
+		<game>
+			<appID>1404850</appID>
+			<name><![CDATA[Luck be a Landlord]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1404850/capsule_184x69.jpg?t=1706703242]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1404850]]></storeLink>
+			<hoursOnRecord>9.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1404850]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1404850/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>582010</appID>
+			<name><![CDATA[Monster Hunter: World]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/582010/capsule_184x69.jpg?t=1704795600]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/582010]]></storeLink>
+			<hoursOnRecord>1.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/582010]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/582010/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>323850</appID>
+			<name><![CDATA[Move or Die]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/323850/capsule_184x69.jpg?t=1702465813]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/323850]]></storeLink>
+			<hoursOnRecord>0.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/323850]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/323850/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>448510</appID>
+			<name><![CDATA[Overcooked]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/448510/capsule_184x69.jpg?t=1705075664]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/448510]]></storeLink>
+			<hoursOnRecord>0.4</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/448510]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/448510/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>728880</appID>
+			<name><![CDATA[Overcooked! 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/728880/capsule_184x69.jpg?t=1706873645]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/728880]]></storeLink>
+			<hoursOnRecord>0.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/728880]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/728880/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>739630</appID>
+			<name><![CDATA[Phasmophobia]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/739630/capsule_184x69.jpg?t=1702309974]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/739630]]></storeLink>
+			<hoursOnRecord>1.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/739630]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/739630/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>493340</appID>
+			<name><![CDATA[Planet Coaster]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/493340/capsule_184x69.jpg?t=1668529576]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/493340]]></storeLink>
+			<hoursOnRecord>0.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/493340]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/493340/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>228300</appID>
+			<name><![CDATA[Remember Me]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/228300/capsule_184x69.jpg?t=1644283394]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/228300]]></storeLink>
+			<hoursOnRecord>0.2</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/RememberMe]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/RememberMe/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>391220</appID>
+			<name><![CDATA[Rise of the Tomb Raider]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/391220/capsule_184x69.jpg?t=1699902983]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/391220]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/391220]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/391220/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1206610</appID>
+			<name><![CDATA[Rubber Bandits]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1206610/capsule_184x69_alt_assets_8.jpg?t=1707476481]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1206610]]></storeLink>
+			<hoursOnRecord>1.8</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1206610]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1206610/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1194250</appID>
+			<name><![CDATA[Screaming Chicken: Ultimate Showdown]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1194250/capsule_184x69.jpg?t=1698840890]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1194250]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1194250]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1194250/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>750920</appID>
+			<name><![CDATA[Shadow of the Tomb Raider]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/750920/capsule_184x69.jpg?t=1706224826]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/750920]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/750920]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/750920/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>849261</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Croft Edition Extras]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849261/capsule_184x69.jpg?t=1694036401]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849261]]></storeLink>
+		</game>
+		<game>
+			<appID>849260</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Deluxe Extras]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849260/capsule_184x69.jpg?t=1694036314]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849260]]></storeLink>
+		</game>
+		<game>
+			<appID>849302</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Fear Incarnate Gear]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849302/capsule_184x69.jpg?t=1675714490]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849302]]></storeLink>
+		</game>
+		<game>
+			<appID>849305</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Force of Chaos Gear]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849305/capsule_184x69.jpg?t=1675714491]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849305]]></storeLink>
+		</game>
+		<game>
+			<appID>849301</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Golden Eagle Gear]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849301/capsule_184x69.jpg?t=1675714492]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849301]]></storeLink>
+		</game>
+		<game>
+			<appID>849304</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Myth Hunter Gear]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849304/capsule_184x69.jpg?t=1675714493]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849304]]></storeLink>
+		</game>
+		<game>
+			<appID>849262</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - Season Pass]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849262/capsule_184x69.jpg?t=1694036385]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849262]]></storeLink>
+		</game>
+		<game>
+			<appID>849187</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - The Forge Content]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849187/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849187]]></storeLink>
+		</game>
+		<game>
+			<appID>849311</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - The Grand Caiman]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849311/capsule_184x69.jpg?t=1675714497]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849311]]></storeLink>
+		</game>
+		<game>
+			<appID>849308</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - The Nightmare]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849308/capsule_184x69.jpg?t=1675714497]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849308]]></storeLink>
+		</game>
+		<game>
+			<appID>849307</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - The Pillar]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849307/capsule_184x69.jpg?t=1675712762]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849307]]></storeLink>
+		</game>
+		<game>
+			<appID>849310</appID>
+			<name><![CDATA[Shadow of the Tomb Raider - The Serpent's Heart]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/849310/capsule_184x69.jpg?t=1675714472]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/849310]]></storeLink>
+		</game>
+		<game>
+			<appID>518790</appID>
+			<name><![CDATA[theHunter: Call of the Wild™]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/518790/capsule_184x69.jpg?t=1702376841]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/518790]]></storeLink>
+			<hoursOnRecord>1.3</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/518790]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/518790/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>305620</appID>
+			<name><![CDATA[The Long Dark]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/305620/capsule_184x69.jpg?t=1691688878]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/305620]]></storeLink>
+			<hoursOnRecord>0.6</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/305620]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/305620/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1222670</appID>
+			<name><![CDATA[The Sims™ 4]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/capsule_184x69_alt_assets_4.jpg?t=1705600873]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1222670]]></storeLink>
+			<hoursOnRecord>26.3</hoursOnRecord>
+		</game>
+		<game>
+			<appID>282070</appID>
+			<name><![CDATA[This War of Mine]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/282070/capsule_184x69.jpg?t=1707498367]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/282070]]></storeLink>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/282070]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/282070/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>354350</appID>
+			<name><![CDATA[This War of Mine Soundtrack]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/354350/capsule_184x69.jpg?t=1652435034]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/354350]]></storeLink>
+		</game>
+		<game>
+			<appID>203160</appID>
+			<name><![CDATA[Tomb Raider]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/203160/capsule_184x69.jpg?t=1699899357]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/203160]]></storeLink>
+			<hoursOnRecord>22.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/TombRaider]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TombRaider/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>386940</appID>
+			<name><![CDATA[Ultimate Chicken Horse]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/386940/capsule_184x69.jpg?t=1703180533]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/386940]]></storeLink>
+			<hoursOnRecord>7.0</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/386940]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/386940/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>837470</appID>
+			<name><![CDATA[Untitled Goose Game]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/837470/capsule_184x69.jpg?t=1699052664]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/837470]]></storeLink>
+			<hoursOnRecord>0.1</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/837470]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/837470/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1669980</appID>
+			<name><![CDATA[Volcano Princess]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1669980/capsule_184x69.jpg?t=1698202778]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1669980]]></storeLink>
+			<hoursOnRecord>15.5</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/1669980]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1669980/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>559650</appID>
+			<name><![CDATA[Witch It]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/559650/capsule_184x69.jpg?t=1702485195]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/559650]]></storeLink>
+			<hoursOnRecord>5.7</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198302900622/stats/559650]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/559650/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>1329410</appID>
+			<name><![CDATA[雀魂麻将(MahjongSoul)]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1329410/capsule_184x69.jpg]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1329410]]></storeLink>
+			<hoursOnRecord>0.1</hoursOnRecord>
+		</game>
+	</games>
+</gamesList>

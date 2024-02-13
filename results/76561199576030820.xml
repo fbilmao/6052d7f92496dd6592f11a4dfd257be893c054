@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561199576030820</steamID64>
+	<steamID><![CDATA[6_6_7]]></steamID>
+	<games>
+		<game>
+			<appID>1623730</appID>
+			<name><![CDATA[Palworld]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1623730/capsule_184x69.jpg?t=1705662211]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/1623730]]></storeLink>
+			<hoursLast2Weeks>4.0</hoursLast2Weeks>
+			<hoursOnRecord>51</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561199576030820/stats/1623730]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1623730/achievements/]]></globalStatsLink>
+		</game>
+	</games>
+</gamesList>

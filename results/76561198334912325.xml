@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561198334912325</steamID64>
+	<steamID><![CDATA[TexasHook$ Beta User 2016-09-29]]></steamID>
+	<games>
+		<game>
+			<appID>730</appID>
+			<name><![CDATA[Counter-Strike 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/730/capsule_184x69.jpg?t=1698860631]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/730]]></storeLink>
+			<hoursOnRecord>0.9</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198334912325/stats/CSGO]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/CSGO/achievements/]]></globalStatsLink>
+		</game>
+		<game>
+			<appID>570</appID>
+			<name><![CDATA[Dota 2]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/570/capsule_184x69.jpg?t=1707435904]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/570]]></storeLink>
+			<hoursOnRecord>18.5</hoursOnRecord>
+		</game>
+	</games>
+</gamesList>
