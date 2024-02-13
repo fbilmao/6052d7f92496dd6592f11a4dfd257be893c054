@@ -20,32 +20,27 @@
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
             const gamesArray = [];
-            const appIDsMap = new Map();
+            const appIDsSet = new Set();
             const filenamesToLog = new Set();
-
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
-
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
                     filenamesToLog.add(filename);
                     continue;
                 }
-
                 const games = xml.querySelectorAll('gamesList > games');
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    const name = game.querySelector('name').textContent;
-                    const logo = game.querySelector('logo').textContent;
-                    const storeLink = game.querySelector('storeLink').textContent;
-
-                    // Check if the appID is already present in the map
-                    if (!appIDsMap.has(appID)) {
+                    if (!appIDsSet.has(appID)) {
+                        const name = game.querySelector('name').textContent;
+                        const logo = game.querySelector('logo').textContent;
+                        const storeLink = game.querySelector('storeLink').textContent;
                         const gameObj = {
                             appID,
                             name,
@@ -54,31 +49,18 @@
                             filename
                         };
                         gamesArray.push(gameObj);
-                        appIDsMap.set(appID, true); // Mark as seen
+                        appIDsSet.add(appID);
                     }
                 });
-
-                // Log filename if all appIDs are duplicated
-                const uniqueAppIDsCount = new Set(Array.from(appIDsMap.keys())).size;
-                if (uniqueAppIDsCount === games.length) {
-                    filenamesToLog.add(filename);
-                }
-
-                // Reset appIDsMap for the next file
-                appIDsMap.clear();
             }
-
             renderGamesList(gamesArray);
             renderFilenames(Array.from(filenamesToLog));
-
-            const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
+            const uniqueGamesCount = appIDsSet.size;
             document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
         }
-
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = '';
-
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
                 listItem.innerHTML = `
@@ -92,18 +74,15 @@
                 gamesList.appendChild(listItem);
             });
         }
-
         function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
             xmlContent.innerHTML = '';
-
             filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
                 duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
-
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
