@@ -21,27 +21,31 @@
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
             const gamesArray = [];
             const appIDsMap = new Map();
-            const encounteredAppIDs = new Set();
             const filenamesToLog = new Set();
+
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
+
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
                     filenamesToLog.add(filename);
                     continue;
                 }
+
                 const games = xml.querySelectorAll('gamesList > games');
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    if (!encounteredAppIDs.has(appID)) {
-                        const name = game.querySelector('name').textContent;
-                        const logo = game.querySelector('logo').textContent;
-                        const storeLink = game.querySelector('storeLink').textContent;
+                    const name = game.querySelector('name').textContent;
+                    const logo = game.querySelector('logo').textContent;
+                    const storeLink = game.querySelector('storeLink').textContent;
+
+                    // Check if the appID is already present in the map
+                    if (!appIDsMap.has(appID)) {
                         const gameObj = {
                             appID,
                             name,
@@ -50,28 +54,27 @@
                             filename
                         };
                         gamesArray.push(gameObj);
-                        encounteredAppIDs.add(appID);
+                        appIDsMap.set(appID, true); // Mark as seen
                     }
-                    if (!appIDsMap.has(appID)) {
-                        appIDsMap.set(appID, new Set());
-                    }
-                    appIDsMap.get(appID).add(filename);
                 });
-            }
-            const filenamesWithDupes = [];
-            appIDsMap.forEach((files, appID) => {
-                if (files.size === fileList.length) {
-                    filenamesWithDupes.push(...files);
+
+                // Log filename if all appIDs are duplicated
+                const uniqueAppIDsCount = new Set(Array.from(appIDsMap.keys())).size;
+                if (uniqueAppIDsCount === games.length) {
+                    filenamesToLog.add(filename);
                 }
-            });
+
+                // Reset appIDsMap for the next file
+                appIDsMap.clear();
+            }
+
             renderGamesList(gamesArray);
-            renderFilenames(filenamesWithDupes);
-            const uniqueGamesCount = encounteredAppIDs.size;
+            renderFilenames(Array.from(filenamesToLog));
+
+            const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
             document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
-            filenamesToLog.forEach(filename => {
-                console.log(`File '${filename}' contains no appID or all of its appIDs are duplicated.`);
-            });
         }
+
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = '';
@@ -89,16 +92,18 @@
                 gamesList.appendChild(listItem);
             });
         }
+
         function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
-            xmlContent.innerHTML = ''; // Clear previous content
+            xmlContent.innerHTML = '';
 
             filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated`;
+                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
+
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
