@@ -79,17 +79,21 @@
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = '';
 
+            const uniqueAppIDs = new Set();
             gamesArray.forEach(game => {
-                const listItem = document.createElement('li');
-                listItem.innerHTML = `
-                    <img src="${game.logo}" alt="${game.name} logo">
-                    <div>
-                        <h2>${game.name}</h2>
-                        <p>App ID: ${game.appID}</p>
-                        <a href="${game.storeLink}" target="_blank">Store Link</a>
-                    </div>
-                `;
-                gamesList.appendChild(listItem);
+                if (!uniqueAppIDs.has(game.appID)) {
+                    const listItem = document.createElement('li');
+                    listItem.innerHTML = `
+                        <img src="${game.logo}" alt="${game.name} logo">
+                        <div>
+                            <h2>${game.name}</h2>
+                            <p>App ID: ${game.appID}</p>
+                            <a href="${game.storeLink}" target="_blank">Store Link</a>
+                        </div>
+                    `;
+                    gamesList.appendChild(listItem);
+                    uniqueAppIDs.add(game.appID);
+                }
             });
         }
 
