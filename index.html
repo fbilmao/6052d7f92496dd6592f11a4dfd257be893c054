@@ -9,10 +9,8 @@
 <body>
     <h1>Games List (Loading...)</h1>
     <ul id="games-list">
-        <!-- List of games will be populated here -->
     </ul>
     <div id="xml-content">
-        <!-- XML content of files without appID will be printed here -->
     </div>
     <script>
         async function loadGames() {
@@ -54,14 +52,12 @@
                     }
                 });
             }));
-            // Sort games by appID in ascending order
             gamesArray.sort((a, b) => a.appID.localeCompare(b.appID));
             renderGamesList(gamesArray);
             renderFilenames(Array.from(filenamesToLog));
             const uniqueGamesCount = appIDsSet.size;
             document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
         }
-
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = '';
@@ -78,7 +74,6 @@
                 gamesList.appendChild(listItem);
             });
         }
-
         function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
             xmlContent.innerHTML = '';
@@ -88,7 +83,6 @@
                 xmlContent.appendChild(duplicateFileName);
             });
         }
-
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
