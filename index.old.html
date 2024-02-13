@@ -48,37 +48,29 @@
                     const logo = game.querySelector('logo').textContent;
                     const storeLink = game.querySelector('storeLink').textContent;
 
-                    const gameObj = {
-                        appID,
-                        name,
-                        logo,
-                        storeLink,
-                        filename
-                    };
-
-                    gamesArray.push(gameObj);
-
-                    // Update appIDsMap to count occurrences of appID
                     if (!appIDsMap.has(appID)) {
-                        appIDsMap.set(appID, new Set());
+                        const gameObj = {
+                            appID,
+                            name,
+                            logo,
+                            storeLink,
+                            filename
+                        };
+
+                        gamesArray.push(gameObj);
+                        appIDsMap.set(appID, filename);
                     }
-                    appIDsMap.get(appID).add(filename);
                 });
+
+                // Sort games by appID
+                gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
+
+                // Render games list
+                renderGamesList(gamesArray);
             }
 
-            // Filter filenames with 100% of their appIDs duped
-            const filenamesWithDupes = [];
-            appIDsMap.forEach((files, appID) => {
-                if (files.size === fileList.length) {
-                    filenamesWithDupes.push(...files);
-                }
-            });
-
-            // Render games list
-            renderGamesList(gamesArray);
-
-            // Render filenames with 100% of their appIDs duped
-            renderFilenames(filenamesWithDupes);
+            // Render filenames with duplicate appIDs at the bottom
+            renderFilenames(appIDsMap);
         }
 
         function renderGamesList(gamesArray) {
@@ -99,13 +91,13 @@
             });
         }
 
-        function renderFilenames(filenames) {
+        function renderFilenames(appIDsMap) {
             const xmlContent = document.getElementById('xml-content');
             xmlContent.innerHTML = ''; // Clear previous content
 
-            filenames.forEach(filename => {
+            appIDsMap.forEach((filename, appID) => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated`;
+                duplicateFileName.textContent = `Duplicate AppID ${appID} found in file: ${filename}`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
