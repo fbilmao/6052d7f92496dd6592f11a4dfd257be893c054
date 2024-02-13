@@ -3,69 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DB v1.0.0</title>
+    <title>XML Games List</title>
 </head>
 <body>
-    <h1>Games List (Loading...)</h1>
+    <h1>Games List <span id="game-count"></span></h1>
     <ul id="games-list">
         <!-- List of games will be populated here -->
     </ul>
+
     <div id="xml-content">
         <!-- XML content of files without appID will be printed here -->
     </div>
+
     <script>
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
+
             const gamesArray = [];
-            const appIDsMap = new Map();
+            const appIDsSet = new Set();
+            const filenamesWithNoAppID = [];
+            const filenamesWithDupes = new Set();
+
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
+                
+                // Check if the XML contains appID
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
-                    document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
-                    continue;
+                    // Log filename if XML contains no appID
+                    filenamesWithNoAppID.push(filename);
+                    continue; // Skip to the next XML file
                 }
+
                 const games = xml.querySelectorAll('gamesList > games');
+
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    const name = game.querySelector('name').textContent;
-                    const logo = game.querySelector('logo').textContent;
-                    const storeLink = game.querySelector('storeLink').textContent;
-                    const gameObj = {
-                        appID,
-                        name,
-                        logo,
-                        storeLink,
-                        filename
-                    };
-                    gamesArray.push(gameObj);
-                    if (!appIDsMap.has(appID)) {
-                        appIDsMap.set(appID, new Set());
+                    if (!appIDsSet.has(appID)) {
+                        const name = game.querySelector('name').textContent;
+                        const logo = game.querySelector('logo').textContent;
+                        const storeLink = game.querySelector('storeLink').textContent;
+
+                        const gameObj = {
+                            appID,
+                            name,
+                            logo,
+                            storeLink,
+                            filename
+                        };
+
+                        gamesArray.push(gameObj);
+                        appIDsSet.add(appID);
+                    } else {
+                        // Log filename if appID already exists
+                        filenamesWithDupes.add(filename);
                     }
-                    appIDsMap.get(appID).add(filename);
                 });
             }
-            const filenamesWithDupes = [];
-            appIDsMap.forEach((files, appID) => {
-                if (files.size === fileList.length) {
-                    filenamesWithDupes.push(...files);
-                }
-            });
+
+            // Render games list
             renderGamesList(gamesArray);
-            renderFilenames(filenamesWithDupes);
-            const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
-            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
+
+            // Render filenames with no appID or with all games duplicated
+            renderFilenames(filenamesWithNoAppID, filenamesWithDupes);
+            
+            // Render total unique games detected
+            document.getElementById('game-count').textContent = ` (${appIDsSet.size} unique games)`;
         }
+
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
-            gamesList.innerHTML = '';
+            gamesList.innerHTML = ''; // Clear previous list
 
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
@@ -80,16 +95,24 @@
                 gamesList.appendChild(listItem);
             });
         }
-        function renderFilenames(filenames) {
+
+        function renderFilenames(filenamesWithNoAppID, filenamesWithDupes) {
             const xmlContent = document.getElementById('xml-content');
             xmlContent.innerHTML = ''; // Clear previous content
 
-            filenames.forEach(filename => {
-                const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated`;
-                xmlContent.appendChild(duplicateFileName);
+            filenamesWithNoAppID.forEach(filename => {
+                const noAppIDMessage = document.createElement('p');
+                noAppIDMessage.textContent = `No AppID found in file: '${filename}'`;
+                xmlContent.appendChild(noAppIDMessage);
+            });
+
+            filenamesWithDupes.forEach(filename => {
+                const allDupesMessage = document.createElement('p');
+                allDupesMessage.textContent = `All games in file '${filename}' are duplicates`;
+                xmlContent.appendChild(allDupesMessage);
             });
         }
+
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
