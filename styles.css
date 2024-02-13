@@ -10,6 +10,10 @@ h1 {
     list-style-type: none;
     padding: 0;
     text-align: center; /* Center the list items */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
 }
 
 /* CSS for XML content */
@@ -29,4 +33,15 @@ h1 {
     white-space: pre-wrap;
     display: inline-block; /* Make the pre element behave like an inline-block */
     text-align: left; /* Reset text alignment inside pre */
+}
+.game-item {
+    flex: 0 0 calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.game-item img {
+    max-width: 100%;
+    height: auto;
 }

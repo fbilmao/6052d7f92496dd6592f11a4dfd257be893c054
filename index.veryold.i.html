@@ -64,6 +64,7 @@
             gamesList.innerHTML = '';
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
+                listItem.classList.add('game-item');
                 listItem.innerHTML = `
                     <img src="${game.logo}" alt="${game.name} logo">
                     <div>
@@ -75,18 +76,15 @@
                 gamesList.appendChild(listItem);
             });
         }
-
-        function renderFilenames(appIDsMap) {
+        function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
-            xmlContent.innerHTML = ''; // Clear previous content
-
-            appIDsMap.forEach((filename, appID) => {
+            xmlContent.innerHTML = '';
+            filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `Duplicate AppID ${appID} found in file: ${filename}`;
+                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
-
         loadGames().catch(error => {
             console.error('Error loading games:', error);
         });
