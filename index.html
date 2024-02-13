@@ -61,15 +61,6 @@
                 }, 300);
             });
         });
-        const cursor = document.querySelector('.cursor');
-        document.addEventListener('mousemove', e => {
-            cursor.style.display = 'block';
-            cursor.style.top = e.pageY + 'px';
-            cursor.style.left = e.pageX + 'px';
-        });
-        document.addEventListener('mouseleave', e => {
-            cursor.style.display = 'none';
-        });
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
@@ -203,6 +194,17 @@
     <div id="xml-content">
         <!-- XML content of files without appID will be printed here -->
     </div>
+    <script>
+            const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.display = 'block';
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
+        document.addEventListener('mouseleave', e => {
+            cursor.style.display = 'none';
+        });
+    </script>
     <div class="cursor"></div>
     <!-- ================== BEGIN core-js ================== -->
     <script src="assets/js/vendor.min.js"></script>
