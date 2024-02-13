@@ -13,33 +13,42 @@
 
     <script>
         async function loadGames() {
-            const response = await fetch('https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/76561197961020058.xml');
+            const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/index.txt';
+            const response = await fetch(indexURL);
             const data = await response.text();
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(data, 'text/xml');
-            const games = xml.querySelectorAll('gamesList > games');
+            const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
+
             const appIDs = new Set();
 
-            games.forEach(game => {
-                const appID = game.querySelector('appID').textContent;
-                if (!appIDs.has(appID)) {
-                    const name = game.querySelector('name').textContent;
-                    const logo = game.querySelector('logo').textContent;
-                    const storeLink = game.querySelector('storeLink').textContent;
+            for (const filename of fileList) {
+                const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
+                const response = await fetch(xmlURL);
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(xmlText, 'text/xml');
+                const games = xml.querySelectorAll('gamesList > games');
 
-                    const listItem = document.createElement('li');
-                    listItem.innerHTML = `
-                        <img src="${logo}" alt="${name} logo">
-                        <div>
-                            <h2>${name}</h2>
-                            <p>App ID: ${appID}</p>
-                            <a href="${storeLink}" target="_blank">Store Link</a>
-                        </div>
-                    `;
-                    document.getElementById('games-list').appendChild(listItem);
-                    appIDs.add(appID);
-                }
-            });
+                games.forEach(game => {
+                    const appID = game.querySelector('appID').textContent;
+                    if (!appIDs.has(appID)) {
+                        const name = game.querySelector('name').textContent;
+                        const logo = game.querySelector('logo').textContent;
+                        const storeLink = game.querySelector('storeLink').textContent;
+
+                        const listItem = document.createElement('li');
+                        listItem.innerHTML = `
+                            <img src="${logo}" alt="${name} logo">
+                            <div>
+                                <h2>${name}</h2>
+                                <p>App ID: ${appID}</p>
+                                <a href="${storeLink}" target="_blank">Store Link</a>
+                            </div>
+                        `;
+                        document.getElementById('games-list').appendChild(listItem);
+                        appIDs.add(appID);
+                    }
+                });
+            }
         }
 
         loadGames().catch(error => {
