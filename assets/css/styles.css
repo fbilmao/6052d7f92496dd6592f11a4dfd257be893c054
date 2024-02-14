@@ -8,7 +8,7 @@
 .brand-img-text {
     color: var(--theme-white) !important;
     margin-right: 90px;
-    margin-left: 90px;
+    margin-left: 200px;
 }
 .brand-text {
     transition: all 0.5s ease;
