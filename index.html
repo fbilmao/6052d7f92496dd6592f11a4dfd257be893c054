@@ -194,6 +194,8 @@
     <div id="xml-content">
         <!-- XML content of files without appID will be printed here -->
     </div>
+    <div class="cursor"></div>
+</body>
     <script>
             const cursor = document.querySelector('.cursor');
         document.addEventListener('mousemove', e => {
@@ -205,10 +207,8 @@
             cursor.style.display = 'none';
         });
     </script>
-    <div class="cursor"></div>
     <!-- ================== BEGIN core-js ================== -->
     <script src="assets/js/vendor.min.js"></script>
     <script src="assets/js/app.min.js"></script>
     <!-- ================== END core-js ================== -->
-</body>
 </html>
