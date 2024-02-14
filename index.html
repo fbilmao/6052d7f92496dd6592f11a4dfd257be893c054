@@ -127,7 +127,7 @@
             xmlContent.innerHTML = '';
             filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
+                duplicateFileName.textContent = `'${filename}' loaded.`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
