@@ -2,26 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DB v1.0.0</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <h1>Games List (Loading...)</h1>
-    <ul id="games-list">
-    </ul>
-    <div id="xml-content">
-    </div>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=auto">
+    <title>DB Alpha | 1.0.0.0</title>
+    <meta name="author" content="" />
+    <meta name="description" content="" />
+    <meta property="og:title" content="DB Alpha | v1.0.0.0">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Just a preview/prototype.">
+    <meta name="Description" content="Just a preview/prototype.">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:image" content="https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/embed.gif">
+    <meta property="og:url" content="https://fbilmao.github.io/6052d7f92496dd6592f11a4dfd257be893c054/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Just a preview/prototype.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/embed.gif">
+    <meta property="twitter:title" content="DB_Alpha">
+    <link rel="image_src" href="https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/embed.gif">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/cursor.css"/>
+     <!-- ================== BEGIN core-css ================== -->
+    <link href="assets/css/vendor.min.css" rel="stylesheet" />
+    <link href="assets/css/app.min.css" rel="stylesheet" />
+    <!-- ================== END core-css ================== -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css" rel="stylesheet">
+    <script>        
+        document.addEventListener('DOMContentLoaded', function() {
+            var brandText = document.getElementById('brand-text');
+            var timeInterval;
+            function updateTime() {
+                var currentTime = new Date();
+                var hours = currentTime.getHours();
+                var minutes = currentTime.getMinutes();
+                var seconds = currentTime.getSeconds();
+                var milliseconds = currentTime.getMilliseconds();
+                minutes = (minutes < 10) ? "0" + minutes : minutes;
+                seconds = (seconds < 10) ? "0" + seconds : seconds;
+                milliseconds = (milliseconds < 100) ? "0" + milliseconds : milliseconds;
+                milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
+                return hours + ":" + minutes + ":" + seconds + ":" + milliseconds;
+            }
+            function updateBrandText() {
+                brandText.innerHTML = updateTime();
+                brandText.classList.remove('blur-text');
+            }
+            timeInterval = setInterval(updateBrandText, 0);
+            brandText.addEventListener('mouseover', function() {
+                if (!brandText.classList.contains('blur-text')) {
+                    brandText.classList.add('blur-text');
+                }
+                clearInterval(timeInterval);
+                setTimeout(function() {
+                    var placeholders = [" Welcome!", " Hi!", " Main", " Prototype", " Operating_since_1991!", " Hosted_on_the_moon!", " very_pasted", " bypassing_BSOD!", " Big_forum_name", " 13:37:00", " skrrrrr."];
+                    var randomPlaceholder = placeholders[Math.floor(Math.random() * placeholders.length)];
+                    brandText.innerHTML = randomPlaceholder;
+                    brandText.classList.remove('blur-text');
+                }, 300);
+            });
+            brandText.addEventListener('mouseout', function() {
+                brandText.classList.add('blur-text');
+                setTimeout(function() {
+                    updateBrandText();
+                    brandText.classList.remove('blur-text');
+                    timeInterval = setInterval(updateBrandText, 0);
+                }, 300);
+            });
+        });
+    </script>
     <script>
-        async function loadGames() {
+                async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
             const gamesArray = [];
-            const appIDsSet = new Set();
-            const filenamesToLog = new Set();
-            await Promise.all(fileList.map(async (filename) => {
+            const appIDsMap = new Map();
+            for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
@@ -30,16 +87,15 @@
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
-                    filenamesToLog.add(filename);
-                    return;
+                    continue;
                 }
                 const games = xml.querySelectorAll('gamesList > games');
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
-                    if (!appIDsSet.has(appID)) {
-                        const name = game.querySelector('name').textContent;
-                        const logo = game.querySelector('logo').textContent;
-                        const storeLink = game.querySelector('storeLink').textContent;
+                    const name = game.querySelector('name').textContent;
+                    const logo = game.querySelector('logo').textContent;
+                    const storeLink = game.querySelector('storeLink').textContent;
+                    if (!appIDsMap.has(appID)) {
                         const gameObj = {
                             appID,
                             name,
@@ -48,27 +104,31 @@
                             filename
                         };
                         gamesArray.push(gameObj);
-                        appIDsSet.add(appID);
+                        appIDsMap.set(appID, filename);
                     }
                 });
-            }));
-            gamesArray.sort((a, b) => a.appID.localeCompare(b.appID));
-            renderGamesList(gamesArray);
-            renderFilenames(Array.from(filenamesToLog));
-            const uniqueGamesCount = appIDsSet.size;
-            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
+                gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
+                renderGamesList(gamesArray);
+                const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
+                document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
+            }
+            renderFilenames(appIDsMap);
         }
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
             gamesList.innerHTML = '';
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
+                listItem.classList.add('game-item'); // <a href="${backend.connect.appID}" target="_blank"> || soon
                 listItem.innerHTML = `
                     <img src="${game.logo}" alt="${game.name} logo">
                     <div>
                         <h2>${game.name}</h2>
-                        <p>App ID: ${game.appID}</p>
-                        <a href="${game.storeLink}" target="_blank">Store Link</a>
+                        <p>App ID: ${game.appID} <a href="${game.storeLink}" target="_blank"> <i class="bi bi-steam me-2 ms-n2" id="steam-logo"></i></a></p>
+                        <p>Detected in: ${game.filename}</p>
+                        <p>Acc. Amount: %s</p>
+                        <p>DRM: %s</p>
+                        <a href="#soon" target="_blank">Log-in to %s</a>
                     </div>
                 `;
                 gamesList.appendChild(listItem);
@@ -79,13 +139,93 @@
             xmlContent.innerHTML = '';
             filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
-                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
+                duplicateFileName.textContent = `'${filename}' loaded.`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
         loadGames().catch(error => {
             console.error('Error loading games:', error);
+        }); 
+    </script>
+</head>
+    <body class="theme-white">
+        <!-- BEGIN #app -->
+        <div id="app" class="app">
+            <div id="header" class="app-header">
+                <!-- BEGIN brand -->
+                <div class="brand">
+                    <a href="index.html" class="brand-logo theme-white text-theme">
+                        <span class="brand-img">
+                            <span class="brand-img-text text-theme theme-white">DB_Alpha </span>
+                            <span class="text-theme theme-white"> </span>
+                            <span class="brand-img-extra text-theme theme-white">   |  </span>
+                        </span>
+                        <span id="brand-text" class="brand-text"></span>
+                        <span class="brand-img-extra text-theme theme-white">   |  </span>
+
+                    </a>
+                </div>
+                <!-- END brand -->
+            <!-- BEGIN menu-search -->
+            <form class="menu-search" method="POST" name="header_search_form">
+                <div class="menu-search-container">
+                    <div class="menu-search-icon"><i class="bi bi-search"></i></div>
+                    <div class="menu-search-input">
+                        <input type="text" class="form-control form-control-lg" placeholder="Search..." />
+                    </div>
+                    <div class="menu-search-icon">
+                        <a href="#" data-toggle-class="app-header-menu-search-toggled" data-toggle-target=".app"><i class="bi bi-x-lg"></i></a>
+                    </div>
+                </div>
+            </form>
+            <!-- END menu-search -->
+        </div>
+        <!-- END #header -->
+        <!-- BEGIN #sidebar -->
+        <div id="sidebar" class="app-sidebar">
+            <!-- BEGIN scrollbar -->
+            <div class="app-sidebar-content" data-scrollbar="true" data-height="100%">
+                <div class="p-3 px-4 mt-auto">
+                    <a href="https://discord.gg/J86Y5uuzAE" class="btn d-block btn-outline-theme">
+                        <i class="bi bi-discord me-2 ms-n2"></i> Our Discord
+                    </a>
+                </div>
+            </div>
+            <!-- END scrollbar -->
+        </div>
+        <!-- END #sidebar -->
+        <!-- BEGIN mobile-sidebar-backdrop -->
+        <button class="app-sidebar-mobile-backdrop" data-toggle-target=".app" data-toggle-class="app-sidebar-mobile-toggled"></button>
+        <!-- END mobile-sidebar-backdrop -->
+        <!-- BEGIN #content -->
+    <h1>Games List</h1>
+    <ul id="games-list">
+        <!-- List of games will be populated here -->
+    </ul>
+    <div class="log-start">Log: </div>
+    <div id="xml-content">
+        <!-- XML content of files without appID will be printed here -->
+    </div>
+    <div class="cursor"></div>
+</body>
+    <script>
+            const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', e => {
+            cursor.style.display = 'block';
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
+        document.addEventListener('scroll', function(event) {
+            cursor.style.display = 'block';
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
+        document.addEventListener('mouseleave', e => {
+            cursor.style.display = 'none';
         });
     </script>
-</body>
+    <!-- ================== BEGIN core-js ================== -->
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <!-- ================== END core-js ================== -->
 </html>

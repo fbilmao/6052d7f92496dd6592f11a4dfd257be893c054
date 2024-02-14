@@ -69,30 +69,42 @@
                 }, 300);
             });
         });
+    </script>
+    <script>
         async function loadGames() {
             const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
             const response = await fetch(indexURL);
             const data = await response.text();
             const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
+
             const gamesArray = [];
             const appIDsMap = new Map();
+            const filenamesToLog = new Set();
+
             for (const filename of fileList) {
                 const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
                 const response = await fetch(xmlURL);
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(xmlText, 'text/xml');
+                
+                // Check if the XML contains appID
                 const appID = xml.querySelector('appID');
                 if (appID === null) {
+                    // Print XML content at the bottom of the page
                     document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
-                    continue;
+                    filenamesToLog.add(filename);
+                    continue; // Skip to the next XML file
                 }
+
                 const games = xml.querySelectorAll('gamesList > games');
+
                 games.forEach(game => {
                     const appID = game.querySelector('appID').textContent;
                     const name = game.querySelector('name').textContent;
                     const logo = game.querySelector('logo').textContent;
                     const storeLink = game.querySelector('storeLink').textContent;
+
                     if (!appIDsMap.has(appID)) {
                         const gameObj = {
                             appID,
@@ -101,49 +113,61 @@
                             storeLink,
                             filename
                         };
+
                         gamesArray.push(gameObj);
                         appIDsMap.set(appID, filename);
                     }
                 });
-                gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
-                renderGamesList(gamesArray);
-                const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
-                document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
             }
-            renderFilenames(appIDsMap);
+
+            // Sort games by appID
+            gamesArray.sort((a, b) => parseInt(a.appID) - parseInt(b.appID));
+
+            // Render games list
+            renderGamesList(gamesArray);
+
+            // Render filenames with duplicate appIDs at the bottom
+            renderFilenames(filenamesToLog);
+
+            // Update unique games count
+            const uniqueGamesCount = new Set(gamesArray.map(game => game.appID)).size;
+            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
         }
+
         function renderGamesList(gamesArray) {
             const gamesList = document.getElementById('games-list');
-            gamesList.innerHTML = '';
+            gamesList.innerHTML = ''; // Clear previous list
+
             gamesArray.forEach(game => {
                 const listItem = document.createElement('li');
-                listItem.classList.add('game-item'); // <a href="${backend.connect.appID}" target="_blank"> || soon
+                listItem.classList.add('game-item');
                 listItem.innerHTML = `
                     <img src="${game.logo}" alt="${game.name} logo">
                     <div>
                         <h2>${game.name}</h2>
-                        <p>App ID: ${game.appID} <a href="${game.storeLink}" target="_blank"> <i class="bi bi-steam me-2 ms-n2" id="steam-logo"></i></a></p>
+                        <p>App ID: ${game.appID}</p>
                         <p>Detected in: ${game.filename}</p>
-                        <p>Acc. Amount: %s</p>
-                        <p>DRM: %s</p>
-                        <a href="#soon" target="_blank">Log-in to %s</a>
+                        <a href="${game.storeLink}" target="_blank">Store Link</a>
                     </div>
                 `;
                 gamesList.appendChild(listItem);
             });
         }
+
         function renderFilenames(filenames) {
             const xmlContent = document.getElementById('xml-content');
-            xmlContent.innerHTML = '';
+            xmlContent.innerHTML = ''; // Clear previous content
+
             filenames.forEach(filename => {
                 const duplicateFileName = document.createElement('p');
                 duplicateFileName.textContent = `'${filename}' loaded.`;
                 xmlContent.appendChild(duplicateFileName);
             });
         }
+
         loadGames().catch(error => {
             console.error('Error loading games:', error);
-        }); 
+        });
     </script>
 </head>
     <body class="theme-white">

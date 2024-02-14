@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DB v1.0.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Games List (Loading...)</h1>
+    <ul id="games-list">
+    </ul>
+    <div id="xml-content">
+    </div>
+    <script>
+        async function loadGames() {
+            const indexURL = 'https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/index.txt';
+            const response = await fetch(indexURL);
+            const data = await response.text();
+            const fileList = data.split('\n').filter(filename => filename.endsWith('.xml'));
+            const gamesArray = [];
+            const appIDsSet = new Set();
+            const filenamesToLog = new Set();
+            await Promise.all(fileList.map(async (filename) => {
+                const xmlURL = `https://raw.githubusercontent.com/fbilmao/6052d7f92496dd6592f11a4dfd257be893c054/main/results/${filename}`;
+                const response = await fetch(xmlURL);
+                const xmlText = await response.text();
+                const parser = new DOMParser();
+                const xml = parser.parseFromString(xmlText, 'text/xml');
+                const appID = xml.querySelector('appID');
+                if (appID === null) {
+                    document.getElementById('xml-content').innerHTML += `<pre>${xmlText}</pre>`;
+                    filenamesToLog.add(filename);
+                    return;
+                }
+                const games = xml.querySelectorAll('gamesList > games');
+                games.forEach(game => {
+                    const appID = game.querySelector('appID').textContent;
+                    if (!appIDsSet.has(appID)) {
+                        const name = game.querySelector('name').textContent;
+                        const logo = game.querySelector('logo').textContent;
+                        const storeLink = game.querySelector('storeLink').textContent;
+                        const gameObj = {
+                            appID,
+                            name,
+                            logo,
+                            storeLink,
+                            filename
+                        };
+                        gamesArray.push(gameObj);
+                        appIDsSet.add(appID);
+                    }
+                });
+            }));
+            gamesArray.sort((a, b) => a.appID.localeCompare(b.appID));
+            renderGamesList(gamesArray);
+            renderFilenames(Array.from(filenamesToLog));
+            const uniqueGamesCount = appIDsSet.size;
+            document.querySelector('h1').textContent = `Games List (${uniqueGamesCount} Unique Games)`;
+        }
+        function renderGamesList(gamesArray) {
+            const gamesList = document.getElementById('games-list');
+            gamesList.innerHTML = '';
+            gamesArray.forEach(game => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <img src="${game.logo}" alt="${game.name} logo">
+                    <div>
+                        <h2>${game.name}</h2>
+                        <p>App ID: ${game.appID}</p>
+                        <a href="${game.storeLink}" target="_blank">Store Link</a>
+                    </div>
+                `;
+                gamesList.appendChild(listItem);
+            });
+        }
+        function renderFilenames(filenames) {
+            const xmlContent = document.getElementById('xml-content');
+            xmlContent.innerHTML = '';
+            filenames.forEach(filename => {
+                const duplicateFileName = document.createElement('p');
+                duplicateFileName.textContent = `All AppIDs in file '${filename}' are duplicated or the file contains no appID`;
+                xmlContent.appendChild(duplicateFileName);
+            });
+        }
+        loadGames().catch(error => {
+            console.error('Error loading games:', error);
+        });
+    </script>
+</body>
+</html>
