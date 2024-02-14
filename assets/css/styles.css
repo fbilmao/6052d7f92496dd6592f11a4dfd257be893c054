@@ -17,6 +17,7 @@
     background-color: #222 !important;
 }
 .log-start {
+    color: #fff !important;
     background-color: #222 !important;
     color: var(--theme-white) !important;
     font-family: "Verdana", sans-serif;
@@ -53,6 +54,7 @@ body {
 }
     
 h1 {
+    color: #fff !important;
     font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
@@ -61,6 +63,7 @@ h1 {
 }
 
 #games-list {
+    color: #fff !important;
     list-style-type: none;
     background-color: #222;
     padding: 0;
@@ -72,6 +75,7 @@ h1 {
 }
 
 #xml-content {
+    color: #fff !important;
     background-color: #222;
     color: var(--theme-white) !important;
     margin-top: 20px;
