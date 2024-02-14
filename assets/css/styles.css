@@ -11,8 +11,6 @@
 .brand-text {
     transition: all 0.5s ease;
     font-family: "Roboto", "Arial", sans-serif;
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .blur-text {
