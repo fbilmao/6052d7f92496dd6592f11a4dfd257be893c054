@@ -203,6 +203,11 @@
             cursor.style.top = e.pageY + 'px';
             cursor.style.left = e.pageX + 'px';
         });
+        document.addEventListener('scroll', function(event) {
+            cursor.style.display = 'block';
+            cursor.style.top = e.pageY + 'px';
+            cursor.style.left = e.pageX + 'px';
+        });
         document.addEventListener('mouseleave', e => {
             cursor.style.display = 'none';
         });
