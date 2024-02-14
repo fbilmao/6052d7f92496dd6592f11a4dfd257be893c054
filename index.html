@@ -114,12 +114,11 @@
                     <img src="${game.logo}" alt="${game.name} logo">
                     <div>
                         <h2>${game.name}</h2>
-                        <a href="${game.storeLink}" target="_blank">Store Link</a>
-                        <p>Log-in %SOON%</p> 
-                        <p>App ID: ${game.appID}</p>
-                        <p>DebugInfo:</p>
+                        <p>App ID: ${game.appID} <a href="${game.storeLink}" target="_blank"> <i class="bi bi-steam me-2 ms-n2" id="steam-logo"></i></a></p>
                         <p>Detected in: ${game.filename}</p>
-                        <p>Acc. Number: %SOON% </p>
+                        <p>Acc. Amount: %s</p>
+                        <p>DRM: %s</p>
+                        <a href="#soon" target="_blank">Log-in to %s</a>
                     </div>
                 `;
                 gamesList.appendChild(listItem);
