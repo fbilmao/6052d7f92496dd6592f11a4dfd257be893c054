@@ -36,12 +36,12 @@
             }
             function updateBrandText() {
                 brandText.innerHTML = updateTime();
-                brandText.classList.remove('blur-text'); // Remove blur class
+                brandText.classList.remove('blur-text');
             }
             timeInterval = setInterval(updateBrandText, 0);
             brandText.addEventListener('mouseover', function() {
                 if (!brandText.classList.contains('blur-text')) {
-                    brandText.classList.add('blur-text'); // Add blur class only if not already blurred
+                    brandText.classList.add('blur-text');
                 }
                 clearInterval(timeInterval);
                 setTimeout(function() {
@@ -143,7 +143,7 @@
                 <div class="brand">
                     <a href="index.html" class="brand-logo theme-white text-theme">
                         <span class="brand-img">
-                            <span class="brand-img-text text-theme theme-white">DB_Alpha</span>
+                            <span class="brand-img-text text-theme theme-white">DB_Alpha  |  </span>
                         </span>
                         <span id="brand-text" class="brand-text"></span>
                     </a>
