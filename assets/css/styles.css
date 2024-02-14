@@ -1,15 +1,20 @@
 .menu-icon i, .breadcrumb {
     color: var(--theme-black) !important;
 }
+
 .no-theme-change {
     color: initial !important;
 }
+
 .brand-text {
     transition: all 0.5s ease;
+    padding-right: 20px;
 }
+
 .blur-text {
     filter: blur(1px);
 }
+
 body {
     font-family: "Roboto", "Arial", sans-serif;
     background-color: #111;
