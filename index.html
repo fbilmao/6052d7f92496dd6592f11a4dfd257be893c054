@@ -45,18 +45,17 @@
                 }
                 clearInterval(timeInterval);
                 setTimeout(function() {
-                    var placeholders = [" Welcome!", " insert meme string", " Main", " Ethical and leet", " Operating since 1991!", " Hosted on the moon!", " very pasted", " bypassing BSOD!", " Big forum name", " 13:37:00", " skrrr."];
+                    var placeholders = [" Welcome!", " Hi!", " Main", " Prototype", " Operating_since_1991!", " Hosted_on_the_moon!", " very_pasted", " bypassing_BSOD!", " Big_forum_name", " 13:37:00", " skrrrrr."];
                     var randomPlaceholder = placeholders[Math.floor(Math.random() * placeholders.length)];
                     brandText.innerHTML = randomPlaceholder;
-                    brandText.classList.remove('blur-text'); // Remove blur class
+                    brandText.classList.remove('blur-text');
                 }, 300);
             });
             brandText.addEventListener('mouseout', function() {
-                brandText.classList.add('blur-text'); // Add blur class
+                brandText.classList.add('blur-text');
                 setTimeout(function() {
                     updateBrandText();
-                    brandText.classList.remove('blur-text'); // Remove blur class
-                    // Resume updating time after easing out
+                    brandText.classList.remove('blur-text');
                     timeInterval = setInterval(updateBrandText, 0);
                 }, 300);
             });
@@ -165,7 +164,6 @@
             <!-- END menu-search -->
         </div>
         <!-- END #header -->
-        
         <!-- BEGIN #sidebar -->
         <div id="sidebar" class="app-sidebar">
             <!-- BEGIN scrollbar -->
@@ -179,18 +177,14 @@
             <!-- END scrollbar -->
         </div>
         <!-- END #sidebar -->
-            
         <!-- BEGIN mobile-sidebar-backdrop -->
         <button class="app-sidebar-mobile-backdrop" data-toggle-target=".app" data-toggle-class="app-sidebar-mobile-toggled"></button>
         <!-- END mobile-sidebar-backdrop -->
-        
         <!-- BEGIN #content -->
-
     <h1>Games List</h1>
     <ul id="games-list">
         <!-- List of games will be populated here -->
     </ul>
-
     <div id="xml-content">
         <!-- XML content of files without appID will be printed here -->
     </div>
