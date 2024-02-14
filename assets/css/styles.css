@@ -7,8 +7,8 @@
 }
 .brand-img-text {
     color: var(--theme-white) !important;
-    padding-right: 200px;
-    margin-left: 200px;
+    margin-right: 200px;
+    padding-left: 200px;
     font-family: "Roboto", "Arial", sans-serif;
 }
 .brand-text {
