@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
+	<steamID64>76561198123092065</steamID64>
+	<steamID><![CDATA[nc24400rr]]></steamID>
+	<games>
+		<game>
+			<appID>242760</appID>
+			<name><![CDATA[The Forest]]></name>
+			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/242760/capsule_184x69.jpg?t=1686917372]]></logo>
+			<storeLink><![CDATA[https://steamcommunity.com/app/242760]]></storeLink>
+			<hoursLast2Weeks>N/A</hoursLast2Weeks>
+			<hoursOnRecord>N/A</hoursOnRecord>
+			<statsLink><![CDATA[https://steamcommunity.com/profiles/76561198123092065/stats/242760]]></statsLink>
+			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/242760/achievements/]]></globalStatsLink>
+		</game>
+	</games>
+</gamesList>
