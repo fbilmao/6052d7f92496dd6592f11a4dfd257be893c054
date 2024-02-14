@@ -1,5 +1,5 @@
 .menu-icon i, .breadcrumb {
-    color: var(--theme-black) !important;
+    color: var(--theme-white) !important;
 }
 
 .no-theme-change {
@@ -8,6 +8,7 @@
 
 .brand-text {
     transition: all 0.5s ease;
+    font-family: "Roboto", "Arial", sans-serif;
     padding-right: 20px;
 }
 
